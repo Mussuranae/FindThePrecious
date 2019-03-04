@@ -1,0 +1,118 @@
+
+/*Carousel*/
+.imgcarousel{
+	height: 35vw;
+	width: auto;
+}
+
+
+/*Tableau Ring*/
+table {
+	border-width:2px; 
+	border-style:solid; 
+	border-color:black;
+	border-spacing : 0;
+	border-collapse : collapse;
+}
+.table {
+	height: 2vw;
+	width: 100%;
+}
+td , th{
+	border-width:1px;
+	border-style:solid; 
+	border-color:black;
+	text-align: center; 
+	vertical-align: middle;
+	width: 50%;
+}
+th{
+	border-width:2px;
+}
+.tableheader{
+	background-color: #464B4A;
+	color: white;
+}
+.tablegrey{
+	background-color: #BCC1C0;
+}
+
+
+/*Wanted picture*/
+.cardwanted{
+	opacity: 0.5;
+}
+.card-img{
+	width: 100%;
+	height: 30vw;
+}
+.spanwanted{
+	color: orange;
+}
+.title-wanted{
+	font-size: 4vw;
+}
+.hoveron{
+	position: absolute;
+	margin-top: 40%;
+	margin-left: 20%;
+	color: white;
+}
+.hoveroff{
+	position: absolute;
+	font-size: 1.5em;
+	text-align: center;
+	color: black;
+	width: 75%;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 2%;
+	top: 4%;
+	margin-left: 5%;
+	background-color: white;
+	opacity: 0.5;
+}
+.cardwanted:hover {
+	width: 300px;
+	opacity: 1;	
+	width: 100%;
+	height: 30vw;
+}
+.cardwanted:hover .hoveroff{
+	display: none;
+}
+.cardwanted:hover .hoveron{
+	font-size: 2em;
+	margin-top: 80%;
+	margin-left: 20%;
+	text-shadow: 1px 1px 1px black;
+	position: absolute;
+}
+
+
+/*Barre de sếparation*/
+hr{
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	height: 0.1vw;
+	background-color: black;
+}
+
+
+/*Footer*/
+#footer{
+	background-color: #494B4B;
+}
+.footernote{
+	font-size: 12px;	
+	text-decoration: none;
+	color: #B9BDBC;
+}
+
+.footersauron{
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+}
