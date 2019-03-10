@@ -1,76 +1,166 @@
+@font-face{
+	font-family: businesstext;
+	src: url(businesstext.ttf);
+}
+@font-face{
+	font-family: anicm;
+	src: url(anicm.ttf);
+}
+@font-face{
+	font-family: tngan;
+	src: url(tngan.ttf);
+}
+
+h3{
+	font-family: businesstext;
+	font-size: 65px;
+}
+h4{
+	font-family: anicm;
+}
+p{
+	font-family: businesstext;
+	font-size: 25px;
+	text-align: justify center;
+}
+.testtngan{
+	font-family: tngan;
+	font-size: 20px;
+	color: orange;
+}
+
+.fellows, .hunters, .army{
+	background-image: url(Integrationfinale/bg_light.png);
+	padding: 20px;
+}
+.ring, .rewards,  .contactus{
+	background-image: url(Integrationfinale/bg_dark.png);
+	padding: 20px;
+}
+
+
+/* Navbar*/
+
+.navbar, .navbar-expand-lg{
+	background-color: #EA8B00;
+}
+
+            /* bouton nav burger a faire apparaitre en blanc*/
+
+.navbar-nav{
+	color: white;
+}
+a.nav-item, .nav-link:link{
+	font-family: anicm;
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+	height: 17px;
+	padding: 0.1px;
+}
+
+a.nav-item, .nav-link:hover{
+	text-decoration: underline
+}
+
 
 /*Carousel*/
 .imgcarousel{
-	height: 35vw;
-	width: auto;
+	height: 450px;
+	width: 80%;
 }
 
 
 /*Tableau Ring*/
-table {
-	border-width:2px; 
-	border-style:solid; 
-	border-color:black;
-	border-spacing : 0;
-	border-collapse : collapse;
+.card{
+	background-color: #EDEAE6;
+}
+.card-header{
+	background-color: orange;
 }
 .table {
 	height: 2vw;
 	width: 100%;
 }
-td , th{
-	border-width:1px;
-	border-style:solid; 
-	border-color:black;
-	text-align: center; 
-	vertical-align: middle;
-	width: 50%;
+.tableheader{	
+	font-family: anicm;
+	text-align: left;
+	font-size: 20px;
+	border-top: hidden;
+	border-bottom: 2px solid black;
 }
-th{
-	border-width:2px;
-}
-.tableheader{
-	background-color: #464B4A;
-	color: white;
-}
-.tablegrey{
-	background-color: #BCC1C0;
+.capabilities{
+	text-align: left;
+	font-family: anicm;
+	color: #888;
 }
 
+.imggollum{
+	border-radius: 100%;
+}
 
 /*Wanted picture*/
+
+.eatthem{
+	font-size:15px;
+}
+.btn-link{
+	color: grey;	
+	font-family: anicm;
+}
+.btn-link:hover{	
+	font-family: anicm;
+	color: #EA8B00;
+}
 .cardwanted{
-	opacity: 0.5;
+	opacity: 0.7;
+	padding: 1vw;
 }
 .card-img{
-	width: 100%;
-	height: 30vw;
+	max-width: 340px; overflow: hidden; 
+	height: 380px;
+	border-style: solid;
+  border-width: 8px;
+  border-color: black;
+  border-radius: 0px;
 }
 .spanwanted{
 	color: orange;
 }
+.spandead{
+	color: orange;
+	text-align: center;	
+	transform: translateY(-100%);
+	font-size: 40px;
+}
 .title-wanted{
 	font-size: 4vw;
 }
+.title-dead{
+	font-size: 4vw;
+	text-decoration-line: line-through;
+	color: orange;
+}
 .hoveron{
-	position: absolute;
-	margin-top: 40%;
-	margin-left: 20%;
-	color: white;
+position: relative;
+float: left;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 100%);
+color: white;
+text-shadow: 1px 1px 1px black;
 }
 .hoveroff{
 	position: absolute;
-	font-size: 1.5em;
 	text-align: center;
 	color: black;
 	width: 75%;
 	border: 1px solid white;
 	border-radius: 5px;
 	padding: 2%;
-	top: 4%;
+	top: 8%;
 	margin-left: 5%;
-	background-color: white;
-	opacity: 0.5;
+	background: rgba(254, 254, 254, 0.8);
 }
 .cardwanted:hover {
 	width: 300px;
@@ -82,36 +172,91 @@ th{
 	display: none;
 }
 .cardwanted:hover .hoveron{
-	font-size: 2em;
-	margin-top: 80%;
-	margin-left: 20%;
+	float: left;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, 200%);
 	text-shadow: 1px 1px 1px black;
 	position: absolute;
 }
-
-
-/*Barre de sếparation*/
-hr{
-	margin-left: 10vw;
-	margin-right: 10vw;
-	margin-top: 5vw;
-	margin-bottom: 5vw;
-	height: 0.1vw;
+.cardwanted:hover .spandead{
+	color: orange;
+	text-align: center;	
+	transform: translateY(-100%);
+	font-size: 40px;
+}
+.description{
+	font-size: 30px;
 	background-color: black;
+	padding: 8px;
 }
 
+
+/*tout et nawak*/
+.btn, .dropdown-item, .form-control{
+	font-family: anicm;
+}
+.btnsubmit{
+	font-family: anicm;
+	color: white;
+}
+.btncontact{
+	font-family: anicm;
+	text-align: center;
+	color: orange;
+}
+img.mordormap{
+	padding: 20px;
+	height: 450px;
+	width: auto;
+	margin-top: 30px;
+}
+
+.white{
+	color: white;
+}
+.namehunter{
+	color: orange;
+	font-size: 50px;
+}
+.hate{
+	color: orange;
+	background-image: url(Integrationfinale/bg_dark.png);
+}
+
+.joinarmy{
+	height: 200px;
+	width: auto;
+}
+.needyou{
+	height: 200px;
+	width: auto;
+}
+.btnsauron{
+	color: orange;
+	background-image: url(Integrationfinale/bg_dark.png);
+	font-size: 20px;
+}
+.moreinfo{
+	font-family: anicm;
+	color: orange;
+	text-align: center;
+	padding-top: 40px; 
+}
 
 /*Footer*/
 #footer{
-	background-color: #494B4B;
+	background-color: #D47104;
 }
 .footernote{
+	font-family: anicm;
 	font-size: 12px;	
 	text-decoration: none;
-	color: #B9BDBC;
+	color: white;
+	padding: 1px;
 }
-
 .footersauron{
+	font-family: anicm;
 	font-size: 15px;
 	font-weight: bold;
 	color: white;
